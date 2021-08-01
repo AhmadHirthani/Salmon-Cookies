@@ -32,7 +32,7 @@ const SeattleStore = {
         let ulElement = document.createElement('ul');
         articleElement.appendChild(ulElement);
 
-        for (let i = 0; i < 14; i++) {
+        for (let i = 0; i < 15; i++) {
             if (i + 6 < 12) {
                 let liElement = document.createElement('li');
                 liElement.textContent = i + 6 + ' am: ' + this.results[i] + ' Cookies';
@@ -48,7 +48,11 @@ const SeattleStore = {
             }
 
 
+
         }
+        let liElement15 = document.createElement('li');
+        liElement15.textContent = "Total:  " + this.Total + "Cookies";
+        ulElement.appendChild(liElement15);
 
 
     }
@@ -87,7 +91,7 @@ const TokyoStore = {
         let ulElement = document.createElement('ul');
         articleElement.appendChild(ulElement);
 
-        for (let i = 0; i < 14; i++) {
+        for (let i = 0; i < 15; i++) {
             if (i + 6 < 12) {
                 let liElement = document.createElement('li');
                 liElement.textContent = i + 6 + ' am: ' + this.results[i] + ' Cookies';
@@ -102,10 +106,11 @@ const TokyoStore = {
                 ulElement.appendChild(liElement);
             }
 
-
         }
 
-
+        let liElement15 = document.createElement('li');
+        liElement15.textContent = "Total:  " + this.Total + "Cookies";
+        ulElement.appendChild(liElement15);
     }
 
 }
@@ -141,7 +146,7 @@ const DubaiStore = {
         let ulElement = document.createElement('ul');
         articleElement.appendChild(ulElement);
 
-        for (let i = 0; i < 14; i++) {
+        for (let i = 0; i < 15; i++) {
             if (i + 6 < 12) {
                 let liElement = document.createElement('li');
                 liElement.textContent = i + 6 + ' am: ' + this.results[i] + ' Cookies';
@@ -156,10 +161,11 @@ const DubaiStore = {
                 ulElement.appendChild(liElement);
             }
 
-
         }
 
-
+        let liElement15 = document.createElement('li');
+        liElement15.textContent = "Total:  " + this.Total + "Cookies";
+        ulElement.appendChild(liElement15);
     }
 
 }
@@ -195,7 +201,7 @@ const ParisStore = {
         let ulElement = document.createElement('ul');
         articleElement.appendChild(ulElement);
 
-        for (let i = 0; i < 14; i++) {
+        for (let i = 0; i < 15; i++) {
             if (i + 6 < 12) {
                 let liElement = document.createElement('li');
                 liElement.textContent = i + 6 + ' am: ' + this.results[i] + ' Cookies';
@@ -210,9 +216,10 @@ const ParisStore = {
                 ulElement.appendChild(liElement);
             }
 
-
         }
-
+        let liElement15 = document.createElement('li');
+        liElement15.textContent = "Total:  " + this.Total + "Cookies";
+        ulElement.appendChild(liElement15);
 
     }
 
@@ -249,7 +256,7 @@ const LimaStore = {
         let ulElement = document.createElement('ul');
         articleElement.appendChild(ulElement);
 
-        for (let i = 0; i < 14; i++) {
+        for (let i = 0; i < 15; i++) {
             if (i + 6 < 12) {
                 let liElement = document.createElement('li');
                 liElement.textContent = i + 6 + ' am: ' + this.results[i] + ' Cookies';
@@ -264,37 +271,38 @@ const LimaStore = {
                 ulElement.appendChild(liElement);
             }
 
-
         }
-
+        let liElement15 = document.createElement('li');
+        liElement15.textContent = "Total:  " + this.Total + "Cookies";
+        ulElement.appendChild(liElement15);
 
     }
 
 }
 
-for (let i = 0; i < 14; i++)
+for (let i = 0; i < 15; i++)
     SeattleStore.results[i] = SeattleStore.sales();
-for (let i = 0; i < 14; i++) {
+for (let i = 0; i < 15; i++) {
     SeattleStore.Total += SeattleStore.results[i];
 }
-for (let i = 0; i < 14; i++)
+for (let i = 0; i < 15; i++)
     TokyoStore.results[i] = TokyoStore.sales();
-for (let i = 0; i < 14; i++) {
+for (let i = 0; i < 15; i++) {
     TokyoStore.Total += TokyoStore.results[i];
 }
-for (let i = 0; i < 14; i++)
+for (let i = 0; i < 15; i++)
     DubaiStore.results[i] = DubaiStore.sales();
-for (let i = 0; i < 14; i++) {
+for (let i = 0; i < 15; i++) {
     DubaiStore.Total += DubaiStore.results[i];
 }
-for (let i = 0; i < 14; i++)
+for (let i = 0; i < 15; i++)
     ParisStore.results[i] = ParisStore.sales();
-for (let i = 0; i < 14; i++) {
+for (let i = 0; i < 15; i++) {
     ParisStore.Total += ParisStore.results[i];
 }
-for (let i = 0; i < 14; i++)
+for (let i = 0; i < 15; i++)
     LimaStore.results[i] = LimaStore.sales();
-for (let i = 0; i < 14; i++) {
+for (let i = 0; i < 15; i++) {
     LimaStore.Total += LimaStore.results[i];
 }
 
