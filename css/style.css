@@ -1,8 +1,111 @@
-table,
-tr,
-th,
-td,
-tfoot {
-    border: 1px solid #222;
-    padding: 12px;
-}
+    table,
+    tr,
+    th,
+    td,
+    tfoot {
+        border: 1px solid #222;
+        padding: 12px;
+    }
+    
+    #index {
+        width: 1250px;
+        margin: auto;
+        font-size: 14px;
+        font-family: 'TradeGothicLTStd', Arial, sans-serif;
+        font-weight: 400;
+        color: #000;
+        background-color: lavender;
+    }
+    
+    header .logo {
+        height: 200px;
+        width: 400px;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+    
+    header .logo {
+        height: 150px;
+        width: 400px;
+    }
+    
+    header h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 62px;
+        font-weight: 800;
+        line-height: 72px;
+        margin: 0 0 24px;
+        text-transform: uppercase;
+    }
+    
+    main {
+        margin: 20px;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto auto;
+    }
+    
+    .grid-item {
+        font-size: 25px;
+        color: sandybrown;
+        text-align: center;
+    }
+    
+    #imgs {
+        padding: 30px;
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: auto auto;
+        color: #7a7c7f;
+        font-size: 20px;
+        font-family: 'Libre Baskerville', serif;
+        line-height: 45px;
+        text-shadow: 0 1px 1px #fff;
+    }
+    
+    #big {
+        width: 600px;
+        height: 400px;
+    }
+    
+    h2 {
+        color: lightsalmon;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 32px;
+        margin: 0 0 24px;
+    }
+    
+    .sec2 p {
+        color: blueviolet;
+        font-family: 'Muli', sans-serif;
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        padding: 30px;
+    }
+    
+    a {
+        color: darkred;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        font-size: 20px;
+        margin: 5px;
+    }
+    
+    main a {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-rows: auto auto;
+    }
